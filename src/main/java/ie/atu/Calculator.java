@@ -8,6 +8,7 @@ public class Calculator {
         add();
         multiply();
         divide();
+        subtraction();
     }
 
     public static void add()
@@ -51,5 +52,17 @@ public class Calculator {
         System.out.println("The answer is " + quotient);
     }
 
+    public static void subtraction()
+    {
+        System.out.println("Print your first number :");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        System.out.println("Print your second number :");
+        int secondNumber = inputs.nextInt();
+
+        int subtract = firstNumber - secondNumber;
+        System.out.println("The difference is " + subtract);
+    }
 }
 
