@@ -8,10 +8,10 @@ public class Calculator {
         add();
         multiply();
         divide();
+        subtraction();
     }
 
-    public static void add()
-    {
+    public static void add() {
         System.out.println("Print your first number :");
         Scanner inputs = new Scanner(System.in);
         int firstNumber = inputs.nextInt();
@@ -23,8 +23,7 @@ public class Calculator {
         System.out.println("The total is " + total);
     }
 
-    public static void multiply()
-    {
+    public static void multiply() {
         System.out.println("\nNext is Multiplication...\n");
         System.out.println("Print your first number : ");
         Scanner inputs = new Scanner(System.in);
@@ -37,8 +36,7 @@ public class Calculator {
         System.out.println("The product is " + multiply);
     }
 
-    public static void divide()
-    {
+    public static void divide() {
         System.out.println("\nNext is Division...\n");
         System.out.println("Print the dividend : ");
         Scanner inputs = new Scanner(System.in);
@@ -51,5 +49,20 @@ public class Calculator {
         System.out.println("The answer is " + quotient);
     }
 
+    public static void subtraction()
+    {
+        System.out.println("Print your first number :");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        System.out.println("Print your second number :");
+        int secondNumber = inputs.nextInt();
+
+        int subtract = firstNumber - secondNumber;
+        System.out.println("The difference is " + subtract);
+    }
 }
+
+
+
 
