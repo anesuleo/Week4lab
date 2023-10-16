@@ -7,6 +7,7 @@ public class Calculator {
         System.out.println("Hello");
         add();
         multiply();
+        divide();
     }
 
     public static void add()
@@ -35,5 +36,20 @@ public class Calculator {
         int multiply = firstNumber * secondNumber;
         System.out.println("The product is " + multiply);
     }
+
+    public static void divide()
+    {
+        System.out.println("\nNext is Division...\n");
+        System.out.println("Print the dividend : ");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        System.out.println("Print the divisor :");
+        int secondNumber = inputs.nextInt();
+
+        int quotient = firstNumber / secondNumber;
+        System.out.println("The answer is " + quotient);
+    }
+
 }
 
