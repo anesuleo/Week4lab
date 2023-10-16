@@ -51,6 +51,7 @@ public class Calculator {
 
     public static void subtraction()
     {
+        System.out.println("\nNext is Subtraction...");
         System.out.println("Print your first number :");
         Scanner inputs = new Scanner(System.in);
         int firstNumber = inputs.nextInt();
